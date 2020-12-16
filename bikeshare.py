@@ -8,7 +8,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 #To get username 
 name = input("please input your name here!: ")
-
+surname = input("please input your surname here!: ")
 def get_filters():
     # Define global 2 variables in order to avoid unboundlocalerror!
     month = "march"
@@ -21,7 +21,7 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
 
-    print("\nHello! {} 'Let\'s explore some US bikeshare data!".upper().format(name))
+    print("\nHello! {} {} 'Let\'s explore some US bikeshare data!".upper().format(name,surname))
     # TO  ask user input for city (chicago, new york city, washington). 
     while True:
       city = input("\nWhich city would you like to explore the data?  Chicago or New York City or Washington?: ").lower()
